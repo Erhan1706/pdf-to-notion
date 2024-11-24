@@ -1,0 +1,20 @@
+{
+  "name": "notion-pdf",
+  "version": "1.0.0",
+  "description": "Script that automatically converts pdfs to notion notebooks",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "run": "node script.js"
+  },
+  "author": "Dorian Erhan",
+  "license": "MIT",
+  "dependencies": {
+    "@notionhq/client": "^2.2.15",
+    "dotenv": "^16.4.5",
+    "dropbox": "^10.34.0",
+    "imagemagick": "^0.1.3",
+    "pdf2image": "^1.2.3",
+    "pdfinfo": "^0.0.3"
+  }
+}

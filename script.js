@@ -12,7 +12,8 @@ const args = process.argv.slice(2);
 const notionApiKey = process.env.NOTION_API_KEY;
 
 // Page id's for the notebooks
-let pageId = "13d5bd99c0eb804d9823ef86fa538f32"; // ML for SE
+// let pageId = "13d5bd99c0eb804d9823ef86fa538f32"; // ML for SE
+let  pageId = "13d5bd99c0eb808a8351ee7f10617b0c"; // DA
 
 if (args.length === 0) {
   console.log("Please provide a file path");
@@ -24,7 +25,7 @@ async function convertPDF(path) {
   const pngPages = await pdfToPng(path, {
     // The function accepts PDF file path or a Buffer
     disableFontFace: true, // When `false`, fonts will be rendered using a built-in font renderer that constructs the glyphs with primitive path commands. Default value is true.
-    useSystemFonts: true, // When `true`, fonts that aren't embedded in the PDF document will fallback to a system font. Default value is false.
+    useSystemFonts: false, // When `true`, fonts that aren't embedded in the PDF document will fallback to a system font. Default value is false.
     viewportScale: 2.0, // The desired scale of PNG viewport. Default value is 1.0.
     outputFolder: "output/", // Folder to write output PNG files. If not specified, PNG output will be available only as a Buffer content, without saving to a file.
     verbosityLevel: 0, // Verbosity level. ERRORS: 0, WARNINGS: 1, INFOS: 5. Default value is 0.

@@ -1,0 +1,5 @@
+## Steps for execution
+- Go to notion and make a connection to 'Personal'
+- Change the correct page id for the notion page in script.js
+- Generate new dropbox access token and change it in .env
+- Don't forget to call ./run.sh with the correct path

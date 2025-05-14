@@ -13,7 +13,9 @@ const notionApiKey = process.env.NOTION_API_KEY;
 
 // Page id's for the notebooks
 // let pageId = "13d5bd99c0eb804d9823ef86fa538f32"; // ML for SE
-let  pageId = "13d5bd99c0eb808a8351ee7f10617b0c"; // DA
+// let  pageId = "13d5bd99c0eb808a8351ee7f10617b0c"; // DA
+
+let pageId = "1de5bd99c0eb80558711dcb5608a1179"; // Testing
 
 if (args.length === 0) {
   console.log("Please provide a file path");

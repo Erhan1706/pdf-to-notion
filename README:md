@@ -3,3 +3,5 @@
 - Change the correct page id for the notion page in script.js
 - Generate new dropbox access token and change it in .env
 - Don't forget to call ./run.sh with the correct path
+
+IMPORTANT - if you had to regenerate your access token then you might need to do source .env before executing, in case the shell preloads you environment variables!!

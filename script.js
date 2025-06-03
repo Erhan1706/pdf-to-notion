@@ -33,7 +33,7 @@ async function convertPDF(path) {
     verbosityLevel: 0, // Verbosity level. ERRORS: 0, WARNINGS: 1, INFOS: 5. Default value is 0.
   });
   return pngPages[0].content;
-}
+} 
 
 await convertPDF(args[0]);
 
